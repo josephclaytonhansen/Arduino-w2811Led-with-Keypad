@@ -30,7 +30,7 @@ Use custom palettes with a W2811 LED strip- use a keypad to change palettes. Mos
 * D0 : Rainforest Night
 * 11 : Mount Hylia *(this is sort of like a snowy, foggy, Sandy Beach)*
 
-As you can see, this leaves a TON of room for more palettes. The Uno will run out of memory before you run out of 2-digit codes. 
+As you can see, this leaves a TON of room for more palettes. The Uno will run out of memory before you run out of 2-digit codes. Even if you had unlimited memory on your Uno, though, the number of 2-digit codes doesn't even come CLOSE to how many palettes you could make. 140 web colors and 16 colors in a palette means 8938078073721553883684253696000000 total possible palettes.
 
 ## Hardware defaults
 * Data pin for W2811 : 5
