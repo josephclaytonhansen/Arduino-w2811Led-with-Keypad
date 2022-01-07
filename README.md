@@ -9,6 +9,7 @@ Use custom palettes with a W2811 LED strip- use a keypad to change palettes. Mos
 * 20 : Forest
 * 30 : Clouds
 * 40 : Lava
+
 **These first four come with FastLED already. The rest were created by me (and my wife)**
 * 50 : Rainforest *(Ever been in a forest when the sunlight is patchy because of the trees?)*
 * 60 : Tokyo Nights *(this one is meant to recreate the experience of driving through a city at night)*
