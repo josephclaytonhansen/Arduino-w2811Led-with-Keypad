@@ -27,6 +27,7 @@ Use custom palettes with a W2811 LED strip- use a keypad to change palettes. Mos
 * A0 : Sunset *(this one has a beautiful sequential gradient, highly recommend)*
 * B0 : Galaxy
 * C0 : Christmas
+* D0 : Rainforest Night
 
 As you can see, this leaves a TON of room for more palettes. The Uno will run out of memory before you run out of 2-digit codes. 
 
