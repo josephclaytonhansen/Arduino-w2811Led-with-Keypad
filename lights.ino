@@ -20,7 +20,7 @@
 #define COLOR_ORDER BRG
 CRGB leds[NUM_LEDS];
 
-int UPDATES_PER_SECOND = 40;
+int UPDATES_PER_SECOND = 30;
 CRGBPalette16 currentPalette;
 TBlendType    currentBlending;
 
@@ -44,6 +44,7 @@ extern const TProgmemPalette16 LostWoods_p PROGMEM;
 extern const TProgmemPalette16 Sunset_p PROGMEM;
 extern const TProgmemPalette16 Galaxy_p PROGMEM;
 extern const TProgmemPalette16 Christmas_p PROGMEM;
+extern const TProgmemPalette16 RainforestNight_p PROGMEM;
 
 // define your specific keypad here via PID
 #define KEYPAD_PID3844
@@ -122,60 +123,60 @@ void loop() {
         if (input_string == "10")
         {
           currentPalette = OceanColors_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
         }
         if (input_string == "20")
         {
           currentPalette = ForestColors_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
         }
         if (input_string == "30")
         {
           currentPalette = CloudColors_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
         }
         if (input_string == "40")
         {
           currentPalette = LavaColors_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
         }
         if (input_string == "50")
         {
           currentPalette = Rainforest_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
         }
         if (input_string == "60")
         {
           currentPalette = Tokyo_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
         }
         if (input_string == "70")
         {
           currentPalette = Nosferatu_p;
-          UPDATES_PER_SECOND = 52;
+          UPDATES_PER_SECOND = 45;
         }
         if (input_string == "80")
         {
           currentPalette = SandyBeach_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
         }
         if (input_string == "90")
         {
           currentPalette = Omnislash_p;
-          UPDATES_PER_SECOND = 60;
+          UPDATES_PER_SECOND = 50;
 
         }
         if (input_string == "15")
         {
           currentPalette = GirlGang_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
         }
         if (input_string == "25")
         {
           currentPalette = FairyFountain_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
         }
         if (input_string == "00")
@@ -187,55 +188,55 @@ void loop() {
         if (input_string == "35")
         {
           currentPalette = Starlight_p;
-          UPDATES_PER_SECOND = 25;
+          UPDATES_PER_SECOND = 17;
 
         }
         if (input_string == "45")
         {
           currentPalette = LemonOrchard_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
 
         }
         if (input_string == "55")
         {
           currentPalette = StormySea_p;
-          UPDATES_PER_SECOND = 50;
+          UPDATES_PER_SECOND = 40;
 
 
         }
         if (input_string == "65")
         {
           currentPalette = Tropics_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
 
         }
         if (input_string == "75")
         {
           currentPalette = Hyrule_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
 
         }
         if (input_string == "85")
         {
           currentPalette = Cinema_p;
-          UPDATES_PER_SECOND = 40;
+          UPDATES_PER_SECOND = 30;
 
 
         }
         if (input_string == "95")
         {
           currentPalette = LostWoods_p;
-          UPDATES_PER_SECOND = 35;
+          UPDATES_PER_SECOND = 25;
 
 
         }
         if (input_string == "A0")
         {
           currentPalette = Sunset_p;
-          UPDATES_PER_SECOND = 20;
+          UPDATES_PER_SECOND = 15;
 
         }
         if (input_string == "B0")
@@ -248,6 +249,12 @@ void loop() {
         {
           currentPalette = Christmas_p;
           UPDATES_PER_SECOND = 25;
+
+        }
+        if (input_string == "D0")
+        {
+          currentPalette = RainforestNight_p;
+          UPDATES_PER_SECOND = 22;
 
         }
         input_string = "";
@@ -621,4 +628,24 @@ const TProgmemPalette16 Christmas_p PROGMEM =
   CRGB::DarkRed,
   CRGB::DarkRed,
   CRGB::Silver,
+};
+
+const TProgmemPalette16 RainforestNight_p PROGMEM =
+{
+  CRGB::DarkGreen,
+  CRGB::MidnightBlue,
+  CRGB::Black,
+  CRGB::MidnightBlue,
+  CRGB::Navy,
+  CRGB::Green,
+  CRGB::DarkGreen,
+  CRGB::ForestGreen,
+  CRGB::Black,
+  CRGB::Olive,
+  CRGB::DarkGreen,
+  CRGB::ForestGreen,
+  CRGB::DarkGreen,
+  CRGB::Olive,
+  CRGB::MidnightBlue,
+  CRGB::DarkOliveGreen,
 };
