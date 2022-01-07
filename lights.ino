@@ -257,7 +257,7 @@ void loop() {
           UPDATES_PER_SECOND = 22;
 
         }
-        if (input_string == "E0")
+        if (input_string == "11")
         {
           currentPalette = MountHylia_p;
           UPDATES_PER_SECOND = 22;
